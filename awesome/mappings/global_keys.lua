@@ -150,9 +150,9 @@ return gears.table.join(
   ),
   awful.key(
     { modkey },
-    "#40",
+    "r",
     function()
-      awful.spawn("rofi -show drun -theme ~/.config/rofi/rofi.rasi")
+      awful.spawn("rofi -show drun")
     end,
     { descripton = "Application launcher", group = "Application" }
   ),

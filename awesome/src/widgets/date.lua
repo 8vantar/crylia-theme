@@ -88,5 +88,12 @@ return function()
     end
   )
 
+  date_widget:connect_signal(
+    "button::press",
+    function()
+      awful.spawn("firefox --new-window https://calendar.google.com/")
+    end
+  )
+
   return date_widget
 end

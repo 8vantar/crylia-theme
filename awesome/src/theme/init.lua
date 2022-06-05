@@ -19,7 +19,6 @@ Theme.awesome_icon = Theme_path .. "../assets/icons/ArchLogo.png"
 Theme.awesome_subicon = Theme_path .. "../assets/icons/ArchLogo.png"
 
 -- Wallpaper
-beautiful.wallpaper = user_vars.wallpaper
 screen.connect_signal(
   'request::wallpaper',
   function(s)

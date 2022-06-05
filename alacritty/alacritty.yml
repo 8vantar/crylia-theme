@@ -24,18 +24,18 @@ scrolling:
 # Font family and style
 font:
   normal:
-    family: "MesloLGS NF"
+    family: "NotoSansMono Nerd Font"
     style: Regular
   bold:
-    family: "MesloLGS NF"
+    family: "NotoSansMono Nerd Font"
     style: Bold
   italic:
-    family: "MesloLGS NF"
+    family: "NotoSansMono Nerd Font"
     style: italic
   bold_italic:
-    family: "MesloLGS NF"
+    family: "NotoSansMono Nerd Font"
     style: Bold Italic
-  size: 12.0
+  size: 14.0
   offset:
     x: 0
     y: 0

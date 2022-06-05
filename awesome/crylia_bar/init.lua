@@ -46,11 +46,12 @@ awful.screen.connect_for_each_screen(
     s.cpu_temp = require("src.widgets.cpu_info")("temp")
     s.gpu_usage = require("src.widgets.gpu_info")("usage")
     s.gpu_temp = require("src.widgets.gpu_info")("temp")
+    s.network = require("src.widgets.network")()
+    s.ram_info = require("src.widgets.ram_info")()
 
-    require("crylia_bar.left_bar")(s, { s.layoutlist, s.systray, s.taglist })
+    require("crylia_bar.left_bar")(s, { s.layoutlist, s.taglist })
     require("crylia_bar.center_bar")(s, { s.tasklist })
-    require("crylia_bar.right_bar")(s, { s.gpu_usage, s.gpu_temp, s.cpu_usage, s.cpu_temp, s.audio, s.kblayout, s.date, s.clock, s.powerbutton })
-    require("crylia_bar.dock")(s, user_vars.dock_programs)
+    require("crylia_bar.right_bar")(s, { s.audio, s.date, s.clock, s.systray, s.powerbutton })
   end
 
   if s.index == 2 then
